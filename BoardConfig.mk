@@ -15,6 +15,10 @@ TARGET_BOOTLOADER_BOARD_NAME := renoir
 # HIDL
 ODM_MANIFEST_FILES := $(DEVICE_PATH)/manifest.xml
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_renoir
+TARGET_RECOVERY_DEVICE_MODULES := libinit_renoir
+
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/renoir-qgki_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7350
