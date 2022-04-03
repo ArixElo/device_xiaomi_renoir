@@ -29,3 +29,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/xiaomi/renoir/renoir-vendor.mk)
+
+# Call the MiuiCamera setup
+$(call inherit-product-if-exists, vendor/xiaomi/renoir-miuicamera/products/miuicamera.mk)

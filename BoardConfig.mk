@@ -12,6 +12,9 @@ include device/xiaomi/sm7350-common/BoardConfigCommon.mk
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := renoir
 
+# Inherit from proprietary files for miuicamera
+-include vendor/xiaomi/renoir-miuicamera/products/board.mk
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_renoir
 TARGET_RECOVERY_DEVICE_MODULES := libinit_renoir
