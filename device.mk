@@ -2,7 +2,6 @@
 # Copyright (C) 2021 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
-#
 
 # Inherit from sm7350-common
 $(call inherit-product, device/xiaomi/sm7350-common/common.mk)
